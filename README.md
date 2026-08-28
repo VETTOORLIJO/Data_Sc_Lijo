@@ -7,10 +7,10 @@ Use this sequence in your repo folder (`myGitTest` / `DS_VettoorLijo`):
 #### 1️⃣ Make sure your feature branch is up to date and pushed
 
 ```bash
-git checkout update-name
+git checkout NewBranch-name
 git status
-git pull origin update-name
-git push origin update-name
+git pull origin NewBranch-name
+git push origin NewBranch-name
 ```
 
 ---
@@ -39,14 +39,14 @@ git commit -m "Merge remote main into local main"
 #### 3️⃣ Merge `update-name` into `main`
 
 ```bash
-git merge update-name
+git merge NewBranch-name
 ```
 
 If there are conflicts, fix them in the files, then:
 
 ```bash
 git add .
-git commit -m "Merge branch 'update-name' into main"
+git commit -m "Merge branch 'NewBranch-name' into main"
 ```
 
 ---
@@ -57,7 +57,7 @@ git commit -m "Merge branch 'update-name' into main"
 git push origin main
 ```
 
-Now `main` on GitHub contains everything from `update-name`.
+Now `main` on GitHub contains everything from `NewBranch-name`.
 
 ---
 
@@ -66,13 +66,13 @@ Now `main` on GitHub contains everything from `update-name`.
 Locally:
 
 ```bash
-git branch -d update-name
+git branch -d NewBranch-name
 ```
 
 On remote:
 
 ```bash
-git push origin --delete update-name
+git push origin --delete NewBranch-name
 ```
 
 ---
